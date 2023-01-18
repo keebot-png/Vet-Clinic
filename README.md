@@ -1,3 +1,7 @@
+# curriculum-databases-projects-template
+
+This template should be used for database related projects at Microverse. Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -57,29 +61,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet-Clinic] <a name="about-project"></a>
+# 📖 Vet-Clinic <a name="about-project"></a>
 
-> This is vet clinic database
-
-**[your_project__name]** is a...
+> This is vet clinic database built with postgreSQL.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
@@ -92,11 +80,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Has data queries of all the data in a file]**
+- **[Has a file that answers each of the queries]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,23 +229,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank Microverse!!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
