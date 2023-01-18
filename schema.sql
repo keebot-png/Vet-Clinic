@@ -4,7 +4,7 @@ CREATE DATABASE vet_clinic
 
 CREATE TABLE animals (
     id INTEGER,
-    name varchar(100),
+    name TEXT,
     date_of_birth DATE,
     escape_attempts INTEGER,
     neutered BOOLEAN,
@@ -12,6 +12,6 @@ CREATE TABLE animals (
 );
 
 ALTER TABLE animals
-ADD COLUMN species INTEGER;
+ADD COLUMN species TEXT;
 
 SELECT * FROM animals;
