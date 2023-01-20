@@ -3,7 +3,7 @@
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
-    id INT, name TEXT, date_of_birth DATE, escape_attempts INTEGER, neutered BOOLEAN, weight_kg DECIMAL,
+    id INT, name varchar(255), date_of_birth DATE, escape_attempts INTEGER, neutered BOOLEAN, weight_kg DECIMAL,
 );
 
 ALTER TABLE animals DROP COLUMN species;
@@ -12,9 +12,9 @@ ALTER TABLE animals DROP COLUMN id;
 
 ALTER TABLE animals ADD id INT SERIAL PRIMARY KEY;
 
-CREATE TABLE owners (id SERIAL PRIMARY KEY, full_name TEXT, age INTEGER);
+CREATE TABLE owners (id SERIAL PRIMARY KEY, full_name varchar(255), age INTEGER);
 
-CREATE TABLE species (id SERIAL PRIMARY KEY, name TEXT);
+CREATE TABLE species (id SERIAL PRIMARY KEY, name varchar(255));
 
 ALTER TABLE animals ADD species_id INT, ADD CONSTRAINT species_constraint FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE CASCADE;
 
