@@ -46,8 +46,8 @@ SELECT AVG(escape_attempts), species, date_of_birth FROM animals GROUP BY specie
 
 SELECT animals.name FROM animals JOIN owners ON owners.id = animals.owner_id WHERE owners.full_name = 'Melody Pond';
 SELECT * FROM animals JOIN species ON species.id = animals.species_id WHERE species.id = 1;
-SELECT * FROM animals JOIN owners ON owners.id = animals.owner_id WHERE 
-SELECT COUNT(animals.species_id) FROM animals JOIN species ON species.id = animals.species_id GROUP BY species.name;
-SELECT * FROM animals JOIN owners ON owner.id = animals.owner_id WHERE owners.species_id = 2;
-SELECT * FROM animals JOIN owners ON  WHERE escape_attempts = 0 AND animals.owner_id = 5;
+SELECT owners.full_name, animals.name FROM animals RIGHT JOIN owners ON owners.id = animals.owner_id; 
+SELECT species.name, COUNT(animals.species_id) FROM animals JOIN species ON species.id = animals.species_id GROUP BY species.name;
+SELECT * FROM animals JOIN owners ON owners.id = animals.owner_id WHERE animals.species_id = 2 AND owners.full_name = 'Jennifer Orwell';
+SELECT * FROM animals JOIN owners ON owners.id = animals.owner_id WHERE animals.escape_attempts = 0 AND animals.owner_id = 5;
 SELECT owners.full_name, COUNT(animals.name) AS animals_owned FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY full_name ORDER BY animals_owned DESC;

@@ -21,15 +21,13 @@ VALUES ('Sam Smith', 34),
 ('Dean Winchester', 14),
 ('Jodie Whittaker', 38);
 
-INSERT INTO species (name)
-VALUES 
-('Pokemon'),
-('Digimon');
+INSERT INTO species (name) VALUES ('Pokemon'), ('Digimon');
 
 UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE species_id IS NULL;
 
 UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
-UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' AND 'Pickachu';
-UPDATE animals SET owner_id = 3 WHERE name = 'Devimon' AND 'Plantmon';
-UPDATE animals SET owner_id = 4 WHERE name = 'Charmander' AND 'Squirtle' AND 'Blossom';
-UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' AND 'Boarmon';
+UPDATE animals SET owner_id = 2 WHERE name IN ('Gabumon', 'Pickachu');
+UPDATE animals SET owner_id = 3 WHERE name IN ('Devimon', 'Plantmon');
+UPDATE animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
