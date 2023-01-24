@@ -48,15 +48,15 @@ CREATE TABLE visits (
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 
--- Performance Optimisation QUERY 1
+-- Performance optimization queries
 
 CREATE INDEX animals_asc ON visits (animals_id ASC);
 DROP INDEX animals_asc;
 
--- Performance Optimisation QUERY 2
+
 
 CREATE INDEX vets_asc ON visits (vet_id ASC);
 
--- Performance Optimisation QUERY 3
+
 
 CREATE INDEX owners_email_asc ON owners (email ASC);
