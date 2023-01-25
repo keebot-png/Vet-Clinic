@@ -40,3 +40,12 @@ CREATE TABLE medical_histories_treatment (
     medical_history_id INTEGER REFERENCES medical_histories (id) ON DELETE CASCADE,
     treatment_id INTEGER REFERENCES treatments (id) ON DELETE CASCADE
 );
+
+-- Index clauses
+
+CREATE INDEX patients_id_medical ON medical_histories (patient_id);
+CREATE INDEX invoices_medical_history_id ON invoices (medical_history_id);
+CREATE INDEX invoice_items_invoice_id ON invoice_items (invoice_id);
+CREATE INDEX invoice_items_treatment_id ON invoice_items (treatment_id);
+CREATE INDEX medical_histories_has_treatments_medical_history_id ON medical_histories_has_treatments (medical_history_id);
+CREATE INDEX medical_histories_has_treatments_treatment_id ON medical_histories_has_treatments (treatment_id);
