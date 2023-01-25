@@ -33,3 +33,10 @@ CREATE TABLE treatments (
     type varchar(225) NOT NULL,
     name varchar(225) NOT NULL
 );
+
+-- Create a join table for the many to many relationship between the treatments and medical_histories tables.
+
+CREATE TABLE medical_histories_treatment (
+    medical_history_id INTEGER REFERENCES medical_histories (id) ON DELETE CASCADE,
+    treatment_id INTEGER REFERENCES treatments (id) ON DELETE CASCADE
+);
